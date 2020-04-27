@@ -6,7 +6,7 @@ namespace Demo.AutoMapper
     {
         public PersonProfile()
         {
-            CreateMap<Person, PersonDto>();
+            CreateMap<Person, PersonDto>().ReverseMap();
         }
     }
 }
