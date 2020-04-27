@@ -4,7 +4,7 @@
     {
         public void Execute()
         {
-             AutoMapperConfiguration.Init();
+            AutoMapperConfiguration.Initialize();
         }
     }
 }

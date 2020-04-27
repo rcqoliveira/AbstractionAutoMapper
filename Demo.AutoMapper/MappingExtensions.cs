@@ -1,4 +1,4 @@
-﻿using Demo.AutoMapper.Class;
+﻿using AutoMapper;
 
 namespace Demo.AutoMapper
 {
@@ -11,16 +11,6 @@ namespace Demo.AutoMapper
         public static TDestination MapTo<TSource, TDestination>(this TSource source, TDestination destination)
         {
             return AutoMapperConfiguration.Mapper.Map(source, destination);
-        }
-
-        public static PeopleResponse ToResponse(this PeopleRequest entity)
-        {
-            return entity.MapTo<PeopleRequest, PeopleResponse>();
-        }
-
-        public static PeopleRequest ToRequest(this PeopleResponse model)
-        {
-            return model.MapTo<PeopleResponse, PeopleRequest>();
         }
     }
 }

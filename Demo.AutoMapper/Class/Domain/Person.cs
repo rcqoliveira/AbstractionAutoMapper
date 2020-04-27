@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Demo.AutoMapper.Class
+namespace Demo.AutoMapper
 {
-    public class PeopleResponse
+    public class Person
     {
         public int Id { get; set; }
         public string Name { get; set; }
